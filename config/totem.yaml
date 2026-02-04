@@ -22,8 +22,8 @@ layers:
     - {t: SPACE, h: SYM}
     - TAB
   NAVI:
-  - [ESC, BT CLR, UP, '=', '{', '}', '7', '8', '9', KP PLUS]
-  - [LSHFT, LEFT, DOWN, RIGHT, '[', ']', '4', '5', '6', KP MINUS]
+  - [ESC, BT CLR, UP, '=', '{', '}', '7', '8', '9', +]
+  - [LSHFT, LEFT, DOWN, RIGHT, '[', ']', '4', '5', '6', '-']
   - - {t: ▽, type: trans}
     - DEL
     - PG UP
@@ -34,7 +34,7 @@ layers:
     - '1'
     - '2'
     - '3'
-  - - KP MULTIPLY
+  - - '*'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
