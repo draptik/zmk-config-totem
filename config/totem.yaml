@@ -1,0 +1,116 @@
+layout: {zmk_keyboard: totem}
+layers:
+  BASE:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - - {t: A, h: LGUI}
+    - {t: S, h: LALT}
+    - {t: D, h: LSHFT}
+    - {t: F, h: LCTRL}
+    - G
+    - H
+    - {t: J, h: RCTRL}
+    - {t: K, h: RSHFT}
+    - {t: L, h: RALT}
+    - {t: ;, h: RGUI}
+  - [LSHFT, Z, X, C, V, B, N, M, ',', .]
+  - - /
+    - \
+    - RET
+    - {t: ESC, h: NAVI}
+    - SPACE
+    - BSPC
+    - {t: SPACE, h: SYM}
+    - TAB
+  NAVI:
+  - [ESC, BT CLR, UP, '=', '{', '}', '7', '8', '9', KP PLUS]
+  - [LSHFT, LEFT, DOWN, RIGHT, '[', ']', '4', '5', '6', KP MINUS]
+  - - {t: ▽, type: trans}
+    - DEL
+    - PG UP
+    - CAPS
+    - PG DN
+    - (
+    - )
+    - '1'
+    - '2'
+    - '3'
+  - - KP MULTIPLY
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - ADJ
+    - '0'
+    - {t: ▽, type: trans}
+  SYM:
+  - ['!', '@', '#', $, '%', ^, '&', AltGr+U, '''', '"']
+  - - AltGr+A
+    - {t: ▽, type: trans}
+    - AltGr+S
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - MUTE
+    - Sft+AltGr+4
+    - AltGr+5
+    - AltGr+4
+    - AltGr+O
+  - - {t: ▽, type: trans}
+    - AltGr+F18
+    - AltGr+F19
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - VOL DN
+    - VOL UP
+    - PREV
+    - NEXT
+  - - \
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ADJ
+    - {t: ▽, type: trans}
+    - {t: PP, type: held}
+    - {t: ▽, type: trans}
+  ADJ:
+  - - '&sys_reset'
+    - BT CLR
+    - OUT TOG
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F7
+    - F8
+    - F9
+    - F12
+  - - '&bootloader'
+    - BT NXT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F4
+    - F5
+    - F6
+    - F11
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BT PRV
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F1
+    - F2
+    - F3
+  - - F10
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+combos:
+- p: [0, 1]
+  k: ESC
