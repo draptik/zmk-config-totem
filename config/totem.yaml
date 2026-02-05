@@ -14,7 +14,7 @@ layers:
     - {t: ;, h: RGUI}
   - [LSHFT, Z, X, C, V, B, N, M, ',', .]
   - - /
-    - \
+    - RALT
     - RET
     - {t: ESC, h: NAVI}
     - SPACE
@@ -22,15 +22,24 @@ layers:
     - {t: SPACE, h: SYM}
     - TAB
   NAVI:
-  - [ESC, BT CLR, UP, '=', '{', '}', '7', '8', '9', +]
-  - [LSHFT, LEFT, DOWN, RIGHT, '[', ']', '4', '5', '6', '-']
+  - - ESC
+    - {t: ▽, type: trans}
+    - UP
+    - '='
+    - '['
+    - ']'
+    - '7'
+    - '8'
+    - '9'
+    - +
+  - [LSHFT, LEFT, DOWN, RIGHT, (, ), '4', '5', '6', '-']
   - - {t: ▽, type: trans}
     - DEL
     - PG UP
     - CAPS
     - PG DN
-    - (
-    - )
+    - '{'
+    - '}'
     - '1'
     - '2'
     - '3'
@@ -44,33 +53,33 @@ layers:
     - {t: ▽, type: trans}
   SYM:
   - ['!', '@', '#', $, '%', ^, '&', AltGr+U, '''', '"']
-  - - AltGr+A
-    - {t: ▽, type: trans}
-    - AltGr+S
+  - - '`'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - MUTE
-    - Sft+AltGr+4
-    - AltGr+5
-    - AltGr+4
-    - AltGr+O
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - AltGr+F18
-    - AltGr+F19
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - VOL DN
-    - VOL UP
-    - PREV
-    - NEXT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '~'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - \
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - ADJ
     - {t: ▽, type: trans}
-    - {t: PP, type: held}
+    - {type: held}
     - {t: ▽, type: trans}
   ADJ:
   - - '&sys_reset'
