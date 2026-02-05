@@ -22,21 +22,12 @@ layers:
     - {t: SPACE, h: SYM}
     - TAB
   NAVI:
-  - - ESC
-    - {t: ▽, type: trans}
-    - UP
-    - '='
-    - '['
-    - ']'
-    - '7'
-    - '8'
-    - '9'
-    - +
+  - [ESC, HOME, UP, END, '[', ']', '7', '8', '9', +]
   - [LSHFT, LEFT, DOWN, RIGHT, (, ), '4', '5', '6', '-']
   - - {t: ▽, type: trans}
     - DEL
     - PG UP
-    - CAPS
+    - '='
     - PG DN
     - '{'
     - '}'
