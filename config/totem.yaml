@@ -15,9 +15,9 @@ layers:
   - [LSHFT, Z, X, C, V, B, N, M, ',', .]
   - - /
     - RALT
-    - RET
-    - {t: ESC, h: NAVI}
-    - SPACE
+    - LCTRL
+    - {t: RET, h: NAVI}
+    - ESC
     - BSPC
     - {t: SPACE, h: SYM}
     - TAB
