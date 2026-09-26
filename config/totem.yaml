@@ -15,18 +15,18 @@ layers:
   - [LSHFT, Z, X, C, V, B, N, M, ',', .]
   - - /
     - RALT
-    - {t: LCTRL, h: layer 3}
-    - {t: RET, h: Sym+Num}
+    - {t: LCTRL, h: FN}
+    - {t: RET, h: SYM+NUM}
     - ESC
     - BSPC
-    - {t: SPACE, h: layer 2}
+    - {t: SPACE, h: NAV}
     - TAB
-  Sym+Num:
+  SYM+NUM:
   - ['!', '@', '#', $, '[', ']', '7', '8', '9', +]
   - [^, '&', '*', '%', (, ), '4', '5', '6', '-']
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '`'
+    - '='
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '{'
@@ -42,12 +42,12 @@ layers:
     - SYSTEM
     - '0'
     - {t: ▽, type: trans}
-  layer 2:
-  - - '!'
-    - '@'
-    - '#'
-    - $
-    - '%'
+  NAV:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - PG UP
     - HOME
     - UP
@@ -81,7 +81,7 @@ layers:
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-  layer 3:
+  FN:
   - - {t: ▽, type: trans}
     - F7
     - F8
@@ -162,3 +162,5 @@ layers:
 combos:
 - p: [0, 1]
   k: ESC
+- p: [8, 9]
+  k: ''''
