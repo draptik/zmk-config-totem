@@ -254,16 +254,16 @@ Done. To use another computer, simply plug the dongle in there.
 [ZMK Studio](https://zmk.dev/docs/features/studio) lets you edit the keymap live, without reflashing
 (similar to VIA/Vial for QMK). It only matters for the dongle, since that's where the keymap lives.
 
-- **Requirement:** dongle firmware built with Studio support (see the Conor-Burns config for a working example).
-- **For this config** this is not set up yet. It would need:
-  - a physical layout (e.g. copy `totem-layouts.dtsi` from the Conor-Burns repo)
-  - replacing the `chosen` `zmk,matrix_transform` with `zmk,physical-layout`
-  - adding `snippet: studio-rpc-usb-uart` and `cmake-args: -DCONFIG_ZMK_STUDIO=y` to the dongle entry in `build.yaml`
-  - adding a `&studio_unlock` key to the keymap
+- **Setup in this config:** the dongle firmware is built with Studio support:
+  - a physical layout in [`totem-layouts.dtsi`](../../config/boards/shields/totem/totem-layouts.dtsi)
+    (taken from the Conor-Burns repo), used by `totem_dongle.overlay` via `zmk,physical-layout`
+  - `snippet: studio-rpc-usb-uart` and `cmake-args: -DCONFIG_ZMK_STUDIO=y` on the dongle entry in `build.yaml`
+  - a `&studio_unlock` key on the *SYSTEM* layer, bottom-left outer key (left of `Z` on the base layer)
 - **Linux permissions (once):** `sudo usermod -aG uucp $USER` (Arch; `dialout` on Debian/Ubuntu), then log out and back in.
 - **Usage:**
   1. Plug in the dongle and open <https://zmk.studio> in Chrome or Edge (or use the [desktop app](https://zmk.studio/download)).
-  2. Connect via USB, then press the `&studio_unlock` key.
+  2. Connect via USB, then press the `&studio_unlock` key (hold Enter + Backspace or Space + Esc for the
+     *SYSTEM* layer, then press the bottom-left outer key).
   3. Edit keys and layers, then click **Save** – changes persist on the dongle.
 - **Limits:** combos, macros, tap dance and newly defined behaviors (e.g. custom hold-taps) can't be edited in
   Studio, and you can't add more layers than the keymap file defines – edit `config/totem.keymap` and

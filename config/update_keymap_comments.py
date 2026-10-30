@@ -202,6 +202,8 @@ def parse_binding(binding: str) -> str:
         return "RESET"
     if binding.startswith("&bootloader"):
         return "BOOTLOAD"
+    if binding.startswith("&studio_unlock"):
+        return "STUDIO"
     if binding.startswith("&bt "):
         bt_cmd = binding.split()[1] if len(binding.split()) > 1 else ""
         return KEY_MAPPINGS.get(bt_cmd, bt_cmd)
