@@ -283,6 +283,13 @@ Done. To use another computer, simply plug the dongle in there.
 - **Limits:** combos, macros, tap dance and newly defined behaviors (e.g. custom hold-taps) can't be edited in
   Studio, and you can't add more layers than the keymap file defines – edit `config/totem.keymap` and
   reflash the dongle for those.
+- **Labels:** Studio's key labels don't show the whole binding, so the layout can look wrong even though
+  it matches `config/totem.keymap`:
+  - mod-taps (`&mt`, the home row mods) only show the hold modifier, e.g. *GUI* instead of `A`
+  - layer-taps (`&lt`, the Ctrl/FN, Enter/SYM+NUM and Space/NAV thumbs) show up blank
+  - combos (Q+W → Esc, O+P → `'`) aren't shown at all
+
+  Click a key to see its full binding. The [layout image](../../config/totem.svg) is the readable overview.
 - **Watch out:** once you've saved changes in Studio, later edits to `totem.keymap` are *not* applied
   until you run **Restore Stock Settings** in Studio (per the ZMK docs). Tip: add empty `reserved` layers
   to the keymap file if you want spare layers to fill in via Studio.
