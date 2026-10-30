@@ -11,6 +11,10 @@
 
 TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/) or [QMK](https://docs.qmk.fm/). It's meant to be used with a SEEED XIAO BLE or RP2040.
 
+This config is based on [GEIGEIGEIST/zmk-config-totem](https://github.com/GEIGEIGEIST/zmk-config-totem) via
+[Conor-Burns/zmk-config-totem](https://github.com/Conor-Burns/zmk-config-totem). The dongle and ZMK Studio setup
+follows [Conor-Burns/zmk-config-totem-dongle](https://github.com/Conor-Burns/zmk-config-totem-dongle).
+
 ## HOW TO USE
 
 This config uses a **wireless USB dongle** as the central: both halves connect to the dongle, and the dongle
