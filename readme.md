@@ -28,3 +28,7 @@ TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 
 ![My TOTEM layout](./config/totem.svg)
 
+## Wireless Dongle
+
+To use a wireless USB dongle as the central (instead of the left half), see [docs/dongle-setup](./docs/dongle-setup/README.md).
+
