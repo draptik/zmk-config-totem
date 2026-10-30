@@ -189,6 +189,11 @@ The steps are the same for each device:
 4. Copy the `.uf2` file onto that drive. The XIAO reboots automatically once the copy finishes and the drive
    disappears – a "device was not ejected properly" or copy error message at that moment is normal.
 
+**Shortcut:** the `flash-totem` script in
+[draptik/dotfiles](https://github.com/draptik/dotfiles/tree/main/zmk-geist-totem) automates steps 3 and 4. Put `firmware.zip` next to it and run `./flash-totem dongle` (or `left`,
+`right`, `settings_reset`). It unpacks the zip into a dated folder, waits for the `XIAO-SENSE` drive, mounts it
+and copies the matching `.uf2`. You still have to do step 2 (double-press reset) when prompted.
+
 ### Step 3 – Wipe old bonds (settings reset) on all three devices
 
 **Why this is needed:** ZMK stores Bluetooth bonds (and other settings such as the selected BT profile) in a
