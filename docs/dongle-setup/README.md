@@ -259,9 +259,19 @@ Done. To use another computer, simply plug the dongle in there.
     (taken from the Conor-Burns repo), used by `totem_dongle.overlay` via `zmk,physical-layout`
   - `snippet: studio-rpc-usb-uart` and `cmake-args: -DCONFIG_ZMK_STUDIO=y` on the dongle entry in `build.yaml`
   - a `&studio_unlock` key on the *SYSTEM* layer, bottom-left outer key (left of `Z` on the base layer)
-- **Linux permissions (once):** `sudo usermod -aG uucp $USER` (Arch; `dialout` on Debian/Ubuntu), then log out and back in.
+- **Linux permissions (once):** Studio talks to the dongle over a serial port (`/dev/ttyACM0`), which belongs
+  to the `uucp` group on Arch (`dialout` on Debian/Ubuntu). Add yourself to that group:
+
+  ```sh
+  sudo usermod -aG uucp $USER
+  ```
+
+  The change only applies after you log out and back in (or reboot). Check it with `id -nG`, which should
+  list `uucp`. `getent group uucp` already shows the change before you log in again, but the running
+  session doesn't have it yet.
 - **Usage:**
-  1. Plug in the dongle and open <https://zmk.studio> in Chrome or Edge (or use the [desktop app](https://zmk.studio/download)).
+  1. Plug in the dongle and open <https://zmk.studio> in Chrome or Edge (Firefox doesn't support serial
+     connections), or use the [desktop app](https://zmk.studio/download).
   2. Connect via USB, then press the `&studio_unlock` key (hold Enter + Backspace or Space + Esc for the
      *SYSTEM* layer, then press the bottom-left outer key).
   3. Edit keys and layers, then click **Save** – changes persist on the dongle.
