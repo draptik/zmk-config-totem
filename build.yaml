@@ -1,6 +1,10 @@
 include:
   - board: seeeduino_xiao_ble
+    shield: totem_dongle
+  - board: seeeduino_xiao_ble
     shield: totem_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: seeeduino_xiao_ble
     shield: totem_right
-# there is no settingsreset (needed) for the XIAO
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
