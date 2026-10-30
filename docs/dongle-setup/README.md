@@ -176,10 +176,11 @@ It is useful as a reference if you later move this config to ZMK `main` or want 
 The steps are the same for each device:
 
 1. Connect the device via USB-C to the computer (for the halves: one half at a time).
-2. **Double-press the reset button** quickly:
+   The halves don't need to be switched on: USB powers the XIAO directly, the power switch only connects the battery.
+2. **Double-press the reset button** quickly (two presses within about half a second):
    - **Halves:** each TOTEM half has its own reset button on the PCB.
-   - **Dongle:** the XIAO's tiny reset button sits next to the USB-C port. Whether the 3D-printed case leaves it
-     reachable (e.g. with a paperclip) isn't documented – check your case.
+   - **Dongle:** the case has a button that presses the XIAO's reset button. Double-tap it.
+   - If no drive appears, the double-press was too slow. Just try again.
    - Alternatively, on a half that is already running, press the `&bootloader` key. In this keymap it's on the
      *SYSTEM* layer, left column, middle row. To reach it, hold Enter (SYM+NUM) + Backspace, or Space (NAV) + Esc.
      It always acts on the half where you press it, so the dongle itself can only be put into the
@@ -226,7 +227,9 @@ Flash all three from the same build.
 
 ### Step 5 – First start & pairing
 
-1. Unplug the halves from USB and switch them on with their power switches.
+1. Unplug the halves from USB and switch them on with their power switches. The order doesn't matter:
+   the dongle keeps looking until it has found both halves, and each half reports its own key positions,
+   so left and right can't get mixed up.
 2. Plug the dongle into the computer using the supplied cable. It shows up as a USB keyboard named "TOTEM";
    no Bluetooth pairing with the computer is needed.
 3. The dongle automatically finds and bonds with both halves. Press a few keys on each half to check.
