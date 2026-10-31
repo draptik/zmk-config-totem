@@ -127,6 +127,7 @@ KEY_MAPPINGS = {
     # Special
     "CAPS": "C LOCK",
     "CAPSLOCK": "C LOCK",
+    "PSCRN": "PRT SCR",
     # Keypad
     "KP_PLUS": "+",
     "KP_MINUS": "-",
