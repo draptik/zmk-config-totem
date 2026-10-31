@@ -35,7 +35,7 @@ layers:
     - '2'
     - '3'
   - - '*'
-    - {t: ▽, type: trans}
+    - ''''
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
@@ -159,8 +159,3 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-combos:
-- p: [0, 1]
-  k: ESC
-- p: [8, 9]
-  k: ''''
