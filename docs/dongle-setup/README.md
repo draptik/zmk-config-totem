@@ -287,7 +287,6 @@ Done. To use another computer, simply plug the dongle in there.
   it matches `config/totem.keymap`:
   - mod-taps (`&mt`, the home row mods) only show the hold modifier, e.g. *GUI* instead of `A`
   - layer-taps (`&lt`, the Ctrl/FN, Enter/SYM+NUM and Space/NAV thumbs) show up blank
-  - combos (Q+W → Esc, O+P → `'`) aren't shown at all
 
   Click a key to see its full binding. The [layout image](../../config/totem.svg) is the readable overview.
 - **Watch out:** once you've saved changes in Studio, later edits to `totem.keymap` are *not* applied
