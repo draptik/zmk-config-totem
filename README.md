@@ -47,3 +47,6 @@ The [dongle setup guide](./docs/dongle-setup/README.md) covers:
 - [ZMK Studio](https://zmk.dev/docs/features/studio), which lets you edit the keymap live on the dongle
   (unlock key: *SYSTEM* layer, bottom-left outer key)
 - troubleshooting and going back to "no dongle" mode
+
+For a dongle with a display showing the battery level of both halves, see
+[Prospector – Dongle with Display](./docs/prospector-dongle/README.md).
