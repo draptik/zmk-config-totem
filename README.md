@@ -38,7 +38,9 @@ after changing their hardware config.
 
 - **switch the half on** before plugging it in: the power switch disconnects the battery, so with the switch
   off USB only powers the controller and the battery does not charge
-- plug the half in via USB-C and leave it for a few hours or overnight (the XIAO charges slowly, ~50 mA)
+- plug the half in via USB-C: a full charge from empty takes about 3 hours, a top-up after a few weeks
+  about 1 hour (the XIAO charges at ~50 mA; the batteries are 751517 LiPos, ~100–120 mAh, as recommended
+  by keeb.supply)
 - the charger stops by itself when the battery is full, so it can stay plugged in
 - the half keeps working while charging
 
