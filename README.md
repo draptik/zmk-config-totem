@@ -34,6 +34,18 @@ Keymap changes only need the dongle reflashed. Flash the halves (`totem_left-…
 press reset twice on each half) only when setting up the dongle for the first time, after a ZMK update, or
 after changing their hardware config.
 
+## Charging
+
+- **switch the half on** before plugging it in: the power switch disconnects the battery, so with the switch
+  off USB only powers the controller and the battery does not charge
+- plug the half in via USB-C and leave it for a few hours or overnight (the XIAO charges slowly, ~50 mA)
+- the charger stops by itself when the battery is full, so it can stay plugged in
+- the half keeps working while charging
+
+There is no way to see the battery level or whether a half is charging: there are no visible LEDs, and the
+computer gets no battery information from the halves through the USB dongle. Charging both halves on a fixed
+schedule (every few weeks) works well.
+
 ## My Layout
 
 ![My TOTEM layout](./config/totem.svg)
