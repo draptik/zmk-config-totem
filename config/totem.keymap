@@ -35,7 +35,7 @@
         //
         //          0 Q   1 W   2 E   3 R   4 T     5 Y   6 U   7 I   8 O   9 P
         //         10 A  11 S  12 D  13 F  14 G    15 H  16 J  17 K  18 L  19 ;
-        //  20 SH  21 Z  22 X  23 C  24 V  25 B    26 N  27 M  28 ,  29 .  30 /  31 ALT
+        //  20 SH  21 Z  22 X  23 C  24 V  25 B    26 N  27 M  28 ,  29 .  30 /  31 '
         //                     32    33    34      35    36    37    (thumbs)
     };
 
@@ -58,7 +58,7 @@
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
             //             ┃     A     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     ;     ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃   SHIFT   ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃    ALT    ┃
+            // ┃   SHIFT   ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     '     ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
             //                                     ┃    CTRL   ┃    RET    ┃    ESC    ┃   ┃    BSPC   ┃    SPC    ┃    TAB    ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -66,7 +66,7 @@
             bindings = <
             &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
             &mt LGUI A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G        &kp H    &mt RCTRL J  &mt RSHFT K  &mt RALT L  &mt RGUI SEMI
- &kp LSHFT  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp RALT
+ &kp LSHFT  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH       &mt RALT SQT
                                     &lt FN LCTRL      &lt SYM_NUM RET  &kp ESC    &kp BSPC &lt NAV SPACE &kp TAB
             >;
         };

@@ -14,7 +14,7 @@ layers:
     - {t: ;, h: RGUI}
   - [LSHFT, Z, X, C, V, B, N, M, ',', .]
   - - /
-    - RALT
+    - {t: '''', h: RALT}
     - {t: LCTRL, h: FN}
     - {t: RET, h: SYM+NUM}
     - ESC
